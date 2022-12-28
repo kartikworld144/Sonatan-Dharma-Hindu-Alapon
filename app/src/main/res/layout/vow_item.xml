@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/news_imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/krishna" />
+
+                    <TextView
+                        android:id="@+id/newsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:text="আমি কে?"
+                        android:maxLines="3"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/newsDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left|center"
+                        android:maxLines="3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:text="কৃষ্ণই প্রথম ব্যক্তি যিনি কর্ণকে তাঁর জন্মের রহস্য সম্পর্কে বলেছিলেন। এটা বিশ্বাস করা হয় যে ভগবান কৃষ্ণের মৃত্যুতে অবদান রেখেছিল এমন অনেকগুলি অভিশাপ ছিল। কিছু অভিশাপের মধ্যে রয়েছে কৃষ্ণের উপর গান্ধারীর অভিশাপ, যেটি ছিল 36 বছরের মধ্যে তিনি এবং তার বংশ অদৃশ্য হয়ে যাবে। অন্যদিকে, ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়েছিলেন যখন তিনি ক্রুদ্ধ হয়েছিলেন যে কৃষ্ণ তাঁর পায়ে খির লাগাননি। ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়ে বলেছিলেন যে তিনি তাঁর পায়ে মারা যাবেন।পূর্ববর্তী অবতারে, ভগবান রাম বালিকে হত্যা করেছিলেন এবং তিনি তারাকে (বালীর বিধবা) আশ্বস্ত করেছিলেন যে বালি তার পরবর্তী জন্মে প্রতিশোধ নিতে সক্ষম হবে। বালি জরা হিসাবে পুনর্জন্ম গ্রহণ করেছিলেন এবং তিনি একটি সাধারণ তীর দিয়ে পৃথিবীতে কৃষ্ণের জীবন শেষ করেছিলেন।"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <Button
+                        android:id="@+id/buttonDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="50dp"
+                        android:backgroundTint="@color/message"
+                        android:text="বিস্তারিতও পড়ুন"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

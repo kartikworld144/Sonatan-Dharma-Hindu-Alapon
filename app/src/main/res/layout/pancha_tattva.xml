@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".PanchaTattva">
+
+    <RelativeLayout
+        android:id="@+id/backItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="পঞ্চতত্ত্ব"
+            android:textColor="?attr/text_color"
+            android:textSize="21sp"
+
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/settings"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/round_back_white10_20"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_margin="10dp"
+
+            />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/imageButtonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:background="@color/night_mode"
+    android:layout_below="@id/backItem"
+    android:padding="10dp"
+    >
+
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:clipToOutline="true"
+        android:background="@drawable/round_back_right_background"
+        app:srcCompat="@drawable/cc" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:clipToOutline="true"
+        android:background="@drawable/round_back_right_background"
+        app:srcCompat="@drawable/nn" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:clipToOutline="true"
+        android:background="@drawable/round_back_right_background"
+        app:srcCompat="@drawable/aaa" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:clipToOutline="true"
+        android:translationX="5dp"
+        android:background="@drawable/round_back_right_background"
+        app:srcCompat="@drawable/g" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:clipToOutline="true"
+        android:background="@drawable/round_back_right_background"
+        app:srcCompat="@drawable/sss" />
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/book_background"
+        android:layout_below="@id/imageButtonLayout"
+        android:fitsSystemWindows="true"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:id="@+id/newLinearlayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:padding="5dp"
+                   android:src="@drawable/mangalacharan"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/_1_2_3_4_5_1_2_3_4_5_ccadi_7_5_ccadi_7_6"
+                   android:textSize="20sp"
+                   android:textStyle="italic"
+                   android:padding="5dp"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"
+                   android:layout_margin="5dp"
+                   android:textColor="@color/black"
+
+                   />
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/linearLayout1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/chaitanya"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ccadi_1_5_ccadi_1_6"
+                   android:textSize="20sp"
+                   android:textStyle="italic"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"
+                   android:textColor="@color/black"
+                   android:layout_margin="5dp"
+
+                   />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/nityananda_prabhu"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ccadi_1_7_1_ccadi_1_9_ccadi_1_10_ccadi_1_11"
+                   android:textSize="20sp"
+                   android:textStyle="italic"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"
+                   android:textColor="@color/black"
+                   android:layout_margin="5dp"
+
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/advaita_acharya"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ccadi_1_13"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"
+                   android:textSize="20sp"
+                   android:textStyle="italic"
+                   android:textColor="@color/black"
+                   android:layout_margin="5dp"
+
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/gadadhara_pandita"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ccadi_10_15"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"
+                   android:textSize="20sp"
+                   android:textStyle="italic"
+                   android:textColor="@color/black"
+                   android:layout_margin="5dp"
+
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linearLayout5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:visibility="gone"
+               android:orientation="vertical"
+               >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/srivas_thakur"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ccadi_10_2_ccadi_3_75_ccadi_6_38_ccadi_6_49_50_ccadi_7_16_90_ccadi_10_1_2_3_4_5_1_2_3_cc"
+                   android:textAllCaps="true"
+                   android:textAlignment="viewStart"                   android:textStyle="italic"
+                   android:textSize="20sp"
+                   android:textColor="@color/black"
+                   android:layout_margin="5dp"
+                   />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

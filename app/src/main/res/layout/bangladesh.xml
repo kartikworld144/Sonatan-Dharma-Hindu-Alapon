@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutBangladesh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3528BB0A"
+                android:gravity="center"
+                android:text="Bangladesh"
+                android:textColor="#102FDB"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/bangladeshImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#793F51B5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bangladesh"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#037C08"
+                android:padding="10dp"
+                android:text="@string/bd"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"
+                />
+            <!-- android:gravity="center_vertical|left"-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:paddingTop="2dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tvTitleNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মনে হয় কিছু ভুল হয়েছে! ক্ষমা করে দেন"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wifi"
+            android:scaleType="center"
+    />
+
+        <TextView
+            android:id="@+id/tvDesNoNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মনে হচ্ছে কোনো সক্রিয় ইন্টারনেট সংযোগ নেই৷\nঅনুগ্রহ করে মোবাইল ডেটা বা ওয়াইফাই সংযোগ করুন"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="অনুগ্রহপূর্বক আবার চেষ্টা করুন"
+            android:textSize="15dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_color"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/tryAgain"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Try Again"
+            android:textColor="@color/text_color" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieNoNet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/no_internet"
+            app:lottie_repeatMode="restart"
+            android:layout_marginTop="12dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

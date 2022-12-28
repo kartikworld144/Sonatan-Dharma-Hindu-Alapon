@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="15dp"
+    tools:context=".Feedback">
+
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/two_color_curved"
+        android:textColor="@color/black"
+        android:hint="Write your name hare"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        android:backgroundTint="#CDD8D6D6"
+        android:paddingLeft="5dp"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/edFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:background="@drawable/two_color_curved"
+        android:backgroundTint="#D8D6D6"
+        android:textColor="@color/black"
+        android:hint="Write your feedback hare"
+        android:paddingLeft="5dp"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:layout_gravity="center"
+        android:padding="10dp"
+
+        />
+</LinearLayout>

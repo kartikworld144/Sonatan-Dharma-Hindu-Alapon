@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/launcher_background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:text="আমি কে?"
+            android:maxLines="3"
+            android:background="@color/img_background"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/newsDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:maxLines="3"
+            android:background="@color/secondary"
+            android:padding="5dp"
+            android:text="কিছু অভিশাপের মধ্যে রয়েছে কৃষ্ণের উপর গান্ধারীর অভিশাপ, যেটি ছিল 36 বছরের মধ্যে তিনি এবং তার বংশ অদৃশ্য হয়ে যাবে। অন্যদিকে, ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়েছিলেন যখন তিনি ক্রুদ্ধ হয়েছিলেন যে কৃষ্ণ তাঁর পায়ে খির লাগাননি। ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়ে বলেছিলেন যে তিনি তাঁর পায়ে মারা যাবেন।পূর্ববর্তী অবতারে, ভগবান রাম বালিকে হত্যা করেছিলেন এবং তিনি তারাকে (বালীর বিধবা) আশ্বস্ত করেছিলেন যে বালি তার পরবর্তী জন্মে প্রতিশোধ নিতে সক্ষম হবে। বালি জরা হিসাবে পুনর্জন্ম গ্রহণ করেছিলেন এবং তিনি একটি সাধারণ তীর দিয়ে পৃথিবীতে কৃষ্ণের জীবন শেষ করেছিলেন।"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:id="@+id/newsCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:maxLines="3"
+            android:background="@color/secondary"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:text="কিছু অভিশাপের মধ্যে রয়েছে কৃষ্ণের উপর গান্ধারীর অভিশাপ, যেটি ছিল 36 বছরের মধ্যে তিনি এবং তার বংশ অদৃশ্য হয়ে যাবে। অন্যদিকে, ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়েছিলেন যখন তিনি ক্রুদ্ধ হয়েছিলেন যে কৃষ্ণ তাঁর পায়ে খির লাগাননি। ঋষি দূর্বাসা ভগবান শ্রীকৃষ্ণকে অভিশাপ দিয়ে বলেছিলেন যে তিনি তাঁর পায়ে মারা যাবেন।পূর্ববর্তী অবতারে, ভগবান রাম বালিকে হত্যা করেছিলেন এবং তিনি তারাকে (বালীর বিধবা) আশ্বস্ত করেছিলেন যে বালি তার পরবর্তী জন্মে প্রতিশোধ নিতে সক্ষম হবে। বালি জরা হিসাবে পুনর্জন্ম গ্রহণ করেছিলেন এবং তিনি একটি সাধারণ তীর দিয়ে পৃথিবীতে কৃষ্ণের জীবন শেষ করেছিলেন।"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/buttonDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/message"
+            android:text="বিস্তারিতও পড়ুন"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

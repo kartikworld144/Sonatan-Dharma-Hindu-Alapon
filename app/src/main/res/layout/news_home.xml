@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".NewsHome">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        app:title="BANGLA ALL NEWS"
+        app:titleMarginStart="40dp"
+        app:buttonGravity="center_vertical"
+        android:background="@color/color_primary"
+        app:titleTextColor="@color/white"
+        />
+
+         <LinearLayout
+             android:layout_above="@id/layout"
+             android:layout_below="@id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+
+    <Button
+        android:id="@+id/buttonViral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALL VIRAL NEWS"
+        android:textColor="@color/text_color"
+        android:background="@drawable/bottom_shade"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/buttonBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="বাংলাদেশের খবর"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/text_color"
+        android:textSize="26sp"
+        />
+    <Button
+        android:id="@+id/buttonIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ভারতের খবর"
+        android:background="@drawable/rectangle"
+        android:textSize="26sp"
+        android:textColor="@color/text_color"
+        android:layout_margin="5dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/RootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="#FFE501"
+            >
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_above="@id/layBottomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <Button
+        android:id="@+id/buttonPopular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POPULAR NEWS"
+        android:background="@drawable/bottom_shade"
+        android:textSize="21sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/text_color"
+        />
+    <Button
+        android:id="@+id/buttonWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEATHER NEWS"
+        android:background="@drawable/bottom_shade"
+        android:textSize="21sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/text_color"
+        />
+</LinearLayout>
+
+
+    <!-- Banner ad  -->
+    <LinearLayout
+        android:id="@+id/layBottomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignParentBottom="true"
+        >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_BANNER_UNIT_ID">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+    <!-- **************************************************** -->
+
+</RelativeLayout>

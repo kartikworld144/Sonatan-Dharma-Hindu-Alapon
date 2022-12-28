@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<group android:checkableBehavior="single">
+
+    <item android:id="@+id/navi_home"
+        android:icon="@drawable/home"
+        android:visible="true"
+        android:iconTint="?attr/text_color"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/navi_rate"
+        android:icon="@drawable/private_account_icon"
+        android:iconTint="?attr/text_color"
+        android:title="@string/rete_us"/>
+
+    <item android:id="@+id/navi_settings"
+        android:icon="@drawable/settings"
+        android:iconTint="?attr/text_color"
+        android:title="@string/settings"/>
+
+</group>
+
+
+
+    <item android:title="@string/social_media">
+
+        <menu>
+           <item android:id="@+id/navi_share"
+               android:title="@string/share"
+               android:iconTint="?attr/text_color"
+               android:icon="@drawable/share"
+               />
+
+           <item android:id="@+id/navi_facebook"
+               android:icon="@drawable/fb_icon"
+               android:iconTint="?attr/text_color"
+               android:title="@string/facebook"/>
+
+            <item android:id="@+id/navi_feedback"
+                android:icon="@drawable/message_icon"
+                android:iconTint="?attr/text_color"
+                android:title="@string/feedback"/>
+
+            <item android:id="@+id/navi_whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:iconTint="?attr/text_color"
+                android:title="@string/whatsapp"/>
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/log_out">
+        <menu>
+            <item android:id="@+id/navi_sign_out"
+                android:icon="@drawable/ic_logout"
+                android:iconTint="?attr/text_color"
+                android:title="@string/sign_out"/>
+        </menu>
+    </item>
+
+</menu>
+

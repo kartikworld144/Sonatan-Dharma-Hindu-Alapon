@@ -1,0 +1,1960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/banner_container">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="এস এম এস - ১"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#3b0147"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms1_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms1_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="এস এম এস - 2"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms2_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms2_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৩"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#270124"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms3_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms3_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৪"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#220021"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms4_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms4_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৫"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#24001f"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms5_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms5_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৬"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#250022"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms6_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms6_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৭"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#240127"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms7_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms7_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৮"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#553354"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms8_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms8_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৯"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#29012b"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms9_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms9_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১০"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#280029"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms10_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms10_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১১"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#2b012a"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms11_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms11_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১২"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms12_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms12_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৩"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms13_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms13_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৪"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms14_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms14_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৫"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms15_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms15_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৬"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms16_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms16_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৭"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms17_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms17_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৮"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms18_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms18_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ১৯"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms19_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms19_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২০"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms20_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms20_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২১"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms21_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms21_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২২"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms22_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms22_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৩"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms23_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms23_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৪"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms24_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms24_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৫"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms25_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms25_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৬"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms26_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms26_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৭"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms27_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms27_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৮"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms28_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms28_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ২৯"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms29_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms29_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFFFEB3B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="এস এম এস - ৩০"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#d81b60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sms30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="your sms"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#290126"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/sms30_share"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableLeft="@drawable/share"
+                            android:paddingLeft="5dp"
+                            android:text="শেয়ার করুন"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/sms30_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:clipToOutline="true"
+                            android:background="@drawable/rectangle"
+                            android:drawableRight="@drawable/ic_send"
+                            android:paddingRight="5dp"
+                            android:text="মেসেজ পাঠান"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+</RelativeLayout>
