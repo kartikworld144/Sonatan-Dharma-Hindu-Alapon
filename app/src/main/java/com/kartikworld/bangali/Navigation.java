@@ -201,10 +201,12 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         marquee = findViewById(R.id.marquee);
         marquee.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         marquee.setText("সনাতন ধর্ম হিন্দু আলাপনে আপনাকে স্বাগতম। যারা তীর্থযাত্রা করতে পারেন না তাদের জন্য অ্যাপটি বিশেষভাবে কার্যকর। সনাতন ধর্ম হিন্দু আলাপন অ্যাপটি হিন্দু ধর্মের তথ্যের বৃহত্তর আধারে দ্রুত অ্যাক্সেস দেয়। অ্যাপটি ভক্তদের ধর্ম-কর্ম, পূজা, ব্রতকথা, শ্রাদ্ধ (ভোজ), বৈষ্ণব ও গৌ সেবা সম্পর্কে জানতে সাহায্য করবে।");
-        marquee.setSelected(true);
         marquee.setSingleLine(true);
-        marquee.append("");
+        marquee.append(""+marquee);
         marquee.setVisibility(View.VISIBLE);
+        //marquee.setMarqueeRepeatLimit(-1);
+        marquee.setSelected(true);
+
         //*************************************************
 
 
