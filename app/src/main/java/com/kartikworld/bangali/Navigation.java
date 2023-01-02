@@ -81,10 +81,9 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
     PreferenceManager preferenceManager;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    public static Bitmap PRO_IMG_BITMAP=null;
 
     // per app run-- do not show more than 4 fullscreen ad. [[Change it if your want]]
-    int fullScreenAdMaxShowCount = 4;
+    int fullScreenAdMaxShowCount = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -202,7 +201,7 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         marquee.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         marquee.setText("সনাতন ধর্ম হিন্দু আলাপনে আপনাকে স্বাগতম। যারা তীর্থযাত্রা করতে পারেন না তাদের জন্য অ্যাপটি বিশেষভাবে কার্যকর। সনাতন ধর্ম হিন্দু আলাপন অ্যাপটি হিন্দু ধর্মের তথ্যের বৃহত্তর আধারে দ্রুত অ্যাক্সেস দেয়। অ্যাপটি ভক্তদের ধর্ম-কর্ম, পূজা, ব্রতকথা, শ্রাদ্ধ (ভোজ), বৈষ্ণব ও গৌ সেবা সম্পর্কে জানতে সাহায্য করবে।");
         marquee.setSingleLine(true);
-        marquee.append(""+marquee);
+        marquee.append("");
         marquee.setVisibility(View.VISIBLE);
         //marquee.setMarqueeRepeatLimit(-1);
         marquee.setSelected(true);
@@ -348,7 +347,7 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         ArrayList<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.news, "Daily important videos for you", null));
         imageList.add(new SlideModel(R.drawable.happy_diwali, "Long live your beautiful life", null));
-        imageList.add(new SlideModel(R.drawable.lots_candles, "Lots of candles in the dark", null));
+        imageList.add(new SlideModel(R.drawable.lots_candles, "ক্লিক করে জপ করুন", null));
         imageList.add(new SlideModel(R.drawable.wat_temple, "Very beautiful old temple", null));
         imageList.add(new SlideModel(R.drawable.temple_singapore, "Holly Temple Singapore", null));
         imageList.add(new SlideModel(R.drawable.revisions, "Daily newspaper reading is a good habit", null));
@@ -364,10 +363,13 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
                 }
 
                 if (position == 1) {
+
                     Toast.makeText(getBaseContext(), "Image 2: Do something", Toast.LENGTH_SHORT).show();
                 }
                 if (position == 2) {
-                    Toast.makeText(getBaseContext(), "Image 3: Do something", Toast.LENGTH_SHORT).show();
+
+                    startActivity(new Intent(Navigation.this, JapaActivity.class));
+                    Toast.makeText(getBaseContext(), "জপ করুন", Toast.LENGTH_SHORT).show();
                 }
                 if (position == 3) {
                     Toast.makeText(getBaseContext(), "Image 4: Do something", Toast.LENGTH_SHORT).show();
@@ -498,7 +500,6 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
             editor.clear();
             editor.commit();
             FirebaseAuth.getInstance().signOut();
-            SharePref.RemoveSharePreference(this);
             Toast.makeText(Navigation.this, "Sign_Out", Toast.LENGTH_SHORT).show();
             //tvResult.clearComposingText();
             startActivity(new Intent(Navigation.this, LoginActivity.class));

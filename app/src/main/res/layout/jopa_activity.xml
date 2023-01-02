@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/launcher_background"
+    tools:context=".JapaActivity">
+
+
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/two_color_curved"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="জপেছেন"
+        android:textSize="25sp" />
+
+
+
+    <LinearLayout
+        android:layout_below="@id/tvView"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="পুনঃস্থাপন করুন"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_margin="6dp"
+            android:onClick="resetPreference"
+            />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="সংরক্ষণ করুন"
+            android:padding="8dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_margin="6dp"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/japa_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/do_jop"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

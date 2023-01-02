@@ -12,38 +12,38 @@
 
     <EditText
         android:id="@+id/edName"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_margin="8dp"
         android:background="@drawable/two_color_curved"
-        android:textColor="@color/black"
-        android:hint="Write your name hare"
-        android:textSize="20sp"
-        android:textAllCaps="true"
-        android:textAlignment="viewStart"
-        android:textStyle="bold"
         android:backgroundTint="#CDD8D6D6"
-        android:paddingLeft="5dp"
-        android:layout_margin="5dp"
-        />
+        android:hint="@string/write_your_name_hare"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/slider_title_background"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edFeedback"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:textStyle="italic"
         android:textSize="20sp"
         android:background="@drawable/two_color_curved"
         android:backgroundTint="#D8D6D6"
+        android:textColorHint="@color/slider_title_background"
         android:textColor="@color/black"
-        android:hint="Write your feedback hare"
-        android:paddingLeft="5dp"
-        android:layout_margin="5dp"
+        android:hint="@string/write_your_feedback_hare"
+        android:layout_margin="8dp"
         />
+
     <Button
         android:id="@+id/buttonSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send Feedback"
+        android:text="@string/send_feedback_from_e_mail"
         android:layout_gravity="center"
         android:padding="10dp"
 

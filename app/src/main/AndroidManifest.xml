@@ -40,6 +40,14 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".JapaActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
             android:name=".NoteArrayList"
             android:exported="false" />
         <activity

@@ -808,6 +808,11 @@
     <string name="bani_in_sms">Bani In SMS</string>
     <string name="news">NEWS</string>
     <string name="om">তৎ সৎ</string>
+    <string name="write_your_feedback_hare">Write your feedback hare</string>
+    <string name="write_your_name_hare">Write your name hare</string>
+    <string name="send_feedback_from_e_mail">Send Feedback From E-mail</string>
+    <string name="mohamontra_japechin"><b><font color='red'>মহামন্ত্র জপেছেন</font></b>\n</string>
+    <string name="do_jop">ক্লিক করে জপ করুন</string>
 
 
 </resources>

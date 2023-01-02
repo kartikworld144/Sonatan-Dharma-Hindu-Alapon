@@ -4,6 +4,8 @@ plugins {
 }
 
 android {
+
+    namespace 'com.kartikworld.bangali'
     compileSdk 33
 
     defaultConfig {

@@ -63,7 +63,7 @@ public class Home extends AppCompatActivity {
     ProgressBar progressBar;
 
     // per app run-- do not show more than 4 fullscreen ad. [[Change it if your want]]
-    int fullScreenAdMaxShowCount = 2;
+    int fullScreenAdMaxShowCount = 1;
 
 
     @Override
