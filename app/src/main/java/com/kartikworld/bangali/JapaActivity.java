@@ -11,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class JapaActivity extends AppCompatActivity {
 
     static TextView tvResult;
-    Button buttonAdd, buttonSave, buttonReset;
+    Button buttonSave, buttonReset;
+    TypeWriter buttonAdd;
     private static int count;
     private static int mala;
 
@@ -34,7 +35,9 @@ public class JapaActivity extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                buttonAdd.setText("");
+                buttonAdd.SetCharacterDelay(50);
+                buttonAdd.AnimateText("হরে কৃষ্ণ হরে কৃষ্ণ\nকৃষ্ণ কৃষ্ণ হরে হরে\n\n"+"হরে রাম হরে রাম\nরাম রাম হরে হরে\n");
 
                 count++;
                 mala = count / 108;
@@ -47,8 +50,6 @@ public class JapaActivity extends AppCompatActivity {
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //count--;
-                int jap = count/108;
 
                 String jop_save =Integer.toString(count);
                 SharePref.TotalSaveSharePreference(getApplicationContext(), Integer.parseInt(jop_save));

@@ -39,7 +39,7 @@
             android:textAllCaps="false"
             android:textSize="20sp"
             android:padding="8dp"
-            android:layout_margin="6dp"
+            android:layout_margin="8dp"
             android:onClick="resetPreference"
             />
 
@@ -52,12 +52,12 @@
             android:padding="8dp"
             android:textAllCaps="false"
             android:textSize="20sp"
-            android:layout_margin="6dp"
+            android:layout_margin="8dp"
 
             />
     </LinearLayout>
 
-    <Button
+    <com.kartikworld.bangali.TypeWriter
         android:id="@+id/buttonAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,6 +70,11 @@
         android:background="@drawable/japa_button"
         android:clickable="true"
         android:focusable="true"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="20dp"
+        android:fontFamily="@font/bangladeshi_unicode"
+        android:layout_gravity="center"
         android:text="@string/do_jop"
         android:textAllCaps="false"
         android:textSize="20sp" />
