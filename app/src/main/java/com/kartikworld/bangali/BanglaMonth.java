@@ -4,6 +4,7 @@ package com.kartikworld.bangali;
 //Then ENUM represent 12 Bengali months (BOISHAKH [বৈশাখ] to CHOITRO[চৈত্র])
 
 public enum BanglaMonth {
+
     BOISHAKH("বৈশাখ"),
     JYOISHTHO("জ্যৈষ্ঠ"),
     ASHARH("আষাঢ়"),
@@ -26,4 +27,5 @@ public enum BanglaMonth {
     public String getBanglaName() {
         return banglaName;
     }
+
 }

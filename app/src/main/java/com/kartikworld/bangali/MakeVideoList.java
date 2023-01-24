@@ -355,7 +355,7 @@ public class MakeVideoList {
 		createCategoryForWebsite("Weather", R.drawable.weather, "Weather");
 		//=========================16
 		//=========================
-		createCategoryForWebsite("SMS", R.drawable.bani, "SMS");
+		createCategoryForWebsite("Time List", R.drawable.bani, "Time List");
 		//=========================17
 		//=========================
 		createCategoryForWebsite("পঞ্চতত্ত্ব", R.drawable.five_digit, "PanchaTattva");

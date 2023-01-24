@@ -7,10 +7,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class JapaActivity extends AppCompatActivity {
 
-    static TextView tvResult;
+    public static TextView tvResult;
     Button buttonSave, buttonReset;
     TypeWriter buttonAdd;
     private static int count;
@@ -31,19 +32,38 @@ public class JapaActivity extends AppCompatActivity {
 
         tvResult.setText(getString(R.string.mohamontra_japechin)+count+" বার / "+mala+ " মালা");
         getDigitENGFromBNG();
+        //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // add toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Back");
 
+        // add back arrow to toolbar
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+        // don't forget click listener for back button
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(arrow -> onBackPressed());
+        //-------------------------------------------------------------------------------------------------
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                buttonAdd.setText("");
-                buttonAdd.SetCharacterDelay(50);
-                buttonAdd.AnimateText("হরে কৃষ্ণ হরে কৃষ্ণ\nকৃষ্ণ কৃষ্ণ হরে হরে\n\n"+"হরে রাম হরে রাম\nরাম রাম হরে হরে\n");
 
                 count++;
                 mala = count / 108;
                 getDigitENGFromBNG();
-                //SharePref.TotalSaveSharePreference(getApplicationContext(),count);
+                //SharePref.TotalSaveSharePreference0(getApplicationContext(),count);
+                buttonAdd.setText("");
+                buttonAdd.SetCharacterDelay(50);
 
+                if (count<=1 || count==109 || count==217 || count==325 || count==433 || count==541 || count==649 || count==757 || count==865 || count==973 || count==1081 || count==1189 || count==1297 || count==1405 || count==1513 || count==1621 || count==1729) {
+                    buttonAdd.AnimateText("জয় শ্রী-কৃষ্ণ-চৈতন্য\nপ্রভু-নিত্যানন্দ।\nশ্রী-অদ্বৈত গদাধর\nশ্রীবাসাধি-গৌর\n-ভক্ত-বৃন্দ।।\nহরে কৃষ্ণ হরে কৃষ্ণ\nকৃষ্ণ কৃষ্ণ হরে হরে\nহরে রাম হরে রাম\nরাম রাম হরে হরে\n");
+                }
+                else {
+                    buttonAdd.AnimateText("হরে কৃষ্ণ হরে কৃষ্ণ\nকৃষ্ণ কৃষ্ণ হরে হরে\n\n"+"হরে রাম হরে রাম\nরাম রাম হরে হরে\n");
+                }
             }
         });
 

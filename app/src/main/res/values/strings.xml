@@ -10,11 +10,17 @@
 
     <!-- Admob APP ID HERE -->
     <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+
     <!-- Admob Ad Unit IDS Here -->
     <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/3419835294</string>
     <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
     <string name="thanks_for_downloading_using_this_apps"><![CDATA[Thanks for downloading & using this Applications]]></string>
 
+    <!--Real Admob Ad Unit IDS Here
+       <string name="admob_app_id">ca-app</string>
+       <string name="admob_interstitial_unit_id">Kartik_Quiz</string>
+       <string name="admob_banner_unit_id">Kartik_Quiz</string>
+       -->
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -803,16 +809,19 @@
     <string name="select_amp_delete"><![CDATA[Select & Delete]]></string>
     <string name="title">শিরোনাম লিখুন</string>
     <string name="bhagavad_gita">Bhagavad Gita</string>
-    <string name="more">More</string>
-    <string name="mytube">MyTube</string>
-    <string name="bani_in_sms">Bani In SMS</string>
-    <string name="news">NEWS</string>
+    <string name="mytube">MyTube For All</string>
+    <string name="bani_in_sms">Bani In SMS Style</string>
+    <string name="news">ALL IN ONE NEWS</string>
     <string name="om">তৎ সৎ</string>
     <string name="write_your_feedback_hare">Write your feedback hare</string>
     <string name="write_your_name_hare">Write your name hare</string>
     <string name="send_feedback_from_e_mail">Send Feedback From E-mail</string>
     <string name="mohamontra_japechin"><b><font color='red'>মহামন্ত্র জপেছেন</font></b>\n</string>
     <string name="do_jop">ক্লিক করে জপ করুন</string>
+    <string name="gita_quiz">Gita Quiz</string>
+    <string name="submit">জমা দিন</string>
+    <string name="more_quiz">More Quiz</string>
+    <string name="more">Click For More</string>
 
 
 </resources>

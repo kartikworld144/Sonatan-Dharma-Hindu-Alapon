@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -22,65 +22,59 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Hare_Krishna"
-        tools:targetApi="n">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity android:name=".WrongActivity" android:screenOrientation="locked"/>
+        <activity android:name=".ScoreActivity" android:screenOrientation="locked"/>
+        <activity android:name=".RightActivity" android:screenOrientation="locked"/>
+        <activity android:name=".QuestionCollection" android:exported="false"/>
+
+
         <activity
-            android:name=".NoteActivity_2"
+            android:name=".QuizActivity2"
             android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ViralNews"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".JapaActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
 
         <activity
+            android:name=".BanglaCalender"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".NoteActivity_2"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".ViralNews"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".JapaActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".NoteArrayList"
             android:exported="false" />
+
         <activity
             android:name=".MainMovieActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MovieModel"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".Vow"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".ResetPassword"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".Register"
             android:exported="false" />
@@ -104,6 +98,9 @@
             android:exported="false" />
         <activity
             android:name=".Ekadashi"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
             android:exported="false" />
         <activity
             android:name=".Navigation"

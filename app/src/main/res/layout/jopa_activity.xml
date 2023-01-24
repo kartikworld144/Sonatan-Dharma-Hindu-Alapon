@@ -8,17 +8,33 @@
     android:background="@color/launcher_background"
     tools:context=".JapaActivity">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/secondary"
+            />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/tvView"
+        android:layout_below="@id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/two_color_curved"
         android:gravity="center"
         android:padding="15dp"
-        android:textColor="@color/black"
         android:text="জপেছেন"
+        android:textColor="@color/black"
         android:textSize="25sp" />
 
 
@@ -30,6 +46,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
+
         <Button
             android:id="@+id/buttonReset"
             android:layout_width="0dp"
@@ -58,11 +75,11 @@
     </LinearLayout>
 
     <com.kartikworld.bangali.TypeWriter
+        android:layout_above="@id/layBottomBanner"
         android:id="@+id/buttonAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -78,6 +95,26 @@
         android:text="@string/do_jop"
         android:textAllCaps="false"
         android:textSize="20sp" />
+    <!-- Banner ad  -->
+    <LinearLayout
+        android:id="@+id/layBottomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="2dp"
+        android:layout_alignParentBottom="true"
+        >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:visibility="visible"
+            ads:adUnitId="@string/admob_BANNER_UNIT_ID">
+        </com.google.android.gms.ads.AdView>
 
-
+    </LinearLayout>
+    <!-- **************************************************** -->
 </RelativeLayout>

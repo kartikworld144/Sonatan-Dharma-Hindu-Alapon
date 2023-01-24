@@ -378,7 +378,7 @@ public class Home extends AppCompatActivity {
                             }
                         }
                         //-------------------------------------------------------------------------------
-                        else if (url != null && url.contains("SMS")) {
+                        else if (url != null && url.contains("Time List")) {
                             try {
 
                                 if (!isNetworkAvailable(Home.this)) {

@@ -69,7 +69,7 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
 
     Toolbar toolbar;
     DrawerLayout drawerLayout;
-    Button buttonMore,buttonNews,buttonSms,buttonMyTube,buttonGita;
+    Button buttonMore,buttonNews,buttonSms,buttonMyTube,buttonGita,buttonQuiz,buttonMoreQuiz;
     AdView mAdView;
     TextView appName, marquee;
     public static boolean OnAd=false;
@@ -93,10 +93,12 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         setContentView(R.layout.navigation);
 
         buttonGita = findViewById(R.id.buttonGrid);
+        buttonQuiz = findViewById(R.id.buttonQuiz);
         appName = findViewById(R.id.appName);
-        mAdView=findViewById(R.id.adView);
+        mAdView=findViewById(R.id.mAdView);
         imageSlider = findViewById(R.id.image_slider);
         animationView = findViewById(R.id.animationView);
+        buttonMoreQuiz=findViewById(R.id.buttonMoreQuiz);
 
 
         //***************************************************
@@ -193,6 +195,7 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
         imageSlider.startAnimation(shake);
         rLayRateUs.startAnimation(shake);
         buttonGita.startAnimation(shake);
+        buttonQuiz.startAnimation(shake);
         //---------------------------------------------------
 
 
@@ -253,6 +256,22 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
                 startActivity(new Intent(Navigation.this, MyTube.class));
             }
         });
+        buttonQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //marquee.setVisibility(View.GONE);
+                startActivity(new Intent(Navigation.this, QuizActivity.class));
+            }
+        });
+
+        buttonMoreQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //marquee.setVisibility(View.GONE);
+                startActivity(new Intent(Navigation.this, QuizActivity2.class));
+            }
+        });
+
         buttonGita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -363,7 +382,7 @@ public class Navigation extends AppCompatActivity implements NavigationView.OnNa
                 }
 
                 if (position == 1) {
-
+                    startActivity(new Intent(Navigation.this, BanglaCalender.class));
                     Toast.makeText(getBaseContext(), "Image 2: Do something", Toast.LENGTH_SHORT).show();
                 }
                 if (position == 2) {

@@ -9,6 +9,18 @@
     <color name="white">#FFFFFFFF</color>
     <color name="launcher_background">#00FFFF</color>
 
+    <color name="colorPrimary">#E68D09</color>
+    <color name="colorPrimaryDark">#FE7A0A</color>
+    <color name="colorAccent">#FEE60A</color>
+    <color name="colorBase">#F2B30F</color>
+    <color name="colorOrangeBaseDark">#E84C02</color>
+
+
+    <color name="dark_grey">#696969</color>
+    <color name="orange_light">#fc8529</color>
+
+
+
 
     <color name="text_color">#FFFFFF</color>
     <color name="background_color">#673AB7</color>
@@ -28,6 +40,8 @@
     <color name="primary">#2196F3</color>
     <color name="secondary">#FF03DAC5</color>
     <color name="message">#125FDD</color>
+    <color name="message2">#2B69CF</color>
+
 
     <color name="night_mode">#77008C</color>
     <color name="notifications">#13FF76</color>
